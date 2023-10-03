@@ -19,3 +19,21 @@ const heros = ["shaktiman", "doga"];
 const myfuction = function(){
     console.log("Hello Sahil");
 }
+//+++++++++++++++++++++++++
+//Memory
+//stack(Primitive), Heap(Non-Primitive)
+let myname = "sahil";
+let anothername = myname
+anothername="sahilrathour"
+console.log(anothername);
+console.log(myname);
+
+
+let userone = {
+    email: "user@",
+    upi: "user@ybl"
+}
+let usertwo = userone
+usertwo.email ="sahil"
+console.log(userone.email);
+console.log(usertwo.email)
