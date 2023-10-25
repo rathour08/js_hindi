@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>shail</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("sahil");
+
+    // },2000)
+
+    // itna time do us k baad m ek bar ap ka kam kr dunga
+
+    // setInterval itne time me bar bar m kam krta rhuga
+// or
+// const saySahil = function(){
+//     console.log("sahil");
+// }
+
+// setTimeout(saySahil, 2000);
+
+
+// cleartimeout function
+
+// clearTimeout ko reference chiye ke kon se time out ko hm hatana chte hai
+
+const changeText = function(){
+    document.querySelector('h1').innerHTML = "hy sahil";
+}
+
+const changeme = setTimeout(changeText, 2000);
+
+document.querySelector("#stop").addEventListener("click", function(){
+    clearTimeout(changeme);
+    console.log("stopped");
+
+})
+
+
+
+</script>
+
+</html>
